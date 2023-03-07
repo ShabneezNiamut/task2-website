@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript" src="script(TASK2).js"></script>
+<link rel="stylesheet" href="style(TASK2).css">
+
+
+<body>  
+
+<form name="form1" method="post" action="#" onsubmit="return fnValidate();">
+  <div class="container">  
+  <center>  <h1> Student Registeration Form</h1> </center>  
+  <hr>  
+  
+<label> First Name: </label>   
+<input type="text" name="firstname" placeholder= "First Name" id="fname" size="15" required />
+
+</br>
+
+<label> Last Name: </label>    
+<input type="text" name="lastname" placeholder="Last Name" id="lname" size="15"required />  
+
+</br>
+
+<div>  
+<label>   
+Gender:  
+</label><br>  
+<input type="radio" value="Male" name="gender" id="gender" required >Male   
+<input type="radio" value="Female" name="gender" id="gender" required>Female   
+</div>
+  
+</br
+
+<label>   
+Phone Contact:  
+</label>  
+
+<input type="text" name="phone" placeholder="(+230) 0000-0000" size="10" id="phone" required>  
+</br>
+
+<label>
+Address:
+</label>
+ 
+<input type="text" name="street" placeholder="Street" size="15" id="street" required>
+<input type="text" name="city" placeholder="City" size="15" id="city" required>
+</br>
+
+<label for="email">Email:</label>  
+<input type="text" placeholder="Enter Email" name="email" id="email" required>  
+</br>
+
+<label for="dob">Date of Birth:</label>
+<input type="date" name="dob" id="dob" required>
+</br>
+</br>
+
+<label for="options">Nationality:</label>
+<select id="options" onchange="showHiddenList()" required>
+  <option value="">Please select</option>
+  <option value="option1">Mauritian</option>
+  <option value="option2">Other</option>
+</select>
+
+<div id="hiddenList" style="display:none;" >
+  <label for="hiddenOption">Other nationalities:</label>
+  <select id="hiddenOption">
+    <option value="hiddenOption1">Indian</option>
+    <option value="hiddenOption2">African</option>
+    <option value="hiddenOption3">British</option>
+  </select>
+</div>
+
+</br>
+</br>
+<label for="nic_passport" >NIC/PASSPORT:</label>
+<input type="text" name="nic_passport" placeholder="Enter NIC/PASSPORT" size="15" id="nic_passport" required>
+
+</br>
+
+<label for="psw">Password:</label>  
+<input type="password" placeholder="Enter Password" name="psw" id="psw"  required>  
+</br>
+
+<label for="psw-repeat">Re-type Password:</label>  
+<input type="password" placeholder="Re-enter Password" name="psw-repeat" id="password" required>  
+</br> 
+</br>
+
+<input type="checkbox" id="rules" name="rules" required>
+<label for="rule">I confirm to have read all the legal terms and conditions.</label>
+</br>
+</br>
+
+<div class="responsive">
+<a target ="_blank" href="success(TASK2).html">
+<button type="submit" onclick="fnValidate()" class="submitbtn">Submit</button> 
+</a>
+</div>
+</br> 
+
+<button type="reset" class="resetbtn">Reset</button> 
+</form>  
+</body>  
+</html>  
